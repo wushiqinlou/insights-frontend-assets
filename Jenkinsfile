@@ -18,6 +18,7 @@ node('insights-frontend-slave') {
 
   if ('dev' == env.BRANCH_NAME) {
     wrapStep('clone', { name -> stage(name) { checkout scm } })
-    wrapStep('deploy_insights', { name -> stage(name) { sh 'rsync -avPS * root@fakamai.usersys.redhat.com:/tmp/static/' } })
+    wrapStep('deploy_insights', { name -> stage(name) { sh 'rsync -avPS * root@fakamai.usersys.redhat.com:/assets/static/' } })
+    wrapStep('chown', { name -> stage(name) { sh 'ssh root@fakamai.usersys.redhat.com "chown nginx:nginx -R /assets"' } })
   }
 }
