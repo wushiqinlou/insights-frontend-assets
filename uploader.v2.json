@@ -140,7 +140,7 @@
             "symbolic_name": "docker_list_images"
         },
         {
-            "command": "/usr/bin/docker inspect",
+            "command": "/usr/bin/docker inspect --type container",
             "pattern": [],
             "pre_command": "docker_container_ids",
             "symbolic_name": "docker_container_inspect"
