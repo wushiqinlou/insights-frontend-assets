@@ -140,6 +140,12 @@
             "symbolic_name": "docker_list_images"
         },
         {
+            "command": "/usr/bin/docker inspect",
+            "pattern": [],
+            "pre_command": "docker_container_ids",
+            "symbolic_name": "docker_container_inspect"
+        },
+        {
             "command": "/sbin/ethtool",
             "pattern": [],
             "pre_command": "iface",
