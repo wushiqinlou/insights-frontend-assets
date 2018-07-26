@@ -981,6 +981,11 @@
             "symbolic_name": "imagemagick_policy"
         },
         {
+            "file": "/proc/1/cgroup",
+            "pattern": [],
+            "symbolic_name": "init_process_cgroup"
+        },
+        {
             "file": "/proc/interrupts",
             "pattern": [],
             "symbolic_name": "interrupts"
