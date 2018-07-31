@@ -986,6 +986,11 @@
             "symbolic_name": "init_process_cgroup"
         },
         {
+            "file": "/etc/vmware-tools/tools.conf",
+            "pattern": [],
+            "symbolic_name": "vmware_tools_conf"
+        },
+        {
             "file": "/proc/interrupts",
             "pattern": [],
             "symbolic_name": "interrupts"
