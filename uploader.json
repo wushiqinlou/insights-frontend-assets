@@ -835,6 +835,11 @@
             "symbolic_name": "cpu_vulns_spectre_v2"
         },
         {
+            "file": "/sys/fs/cgroup/cpuset/cpuset.cpus",
+            "pattern": [],
+            "symbolic_name": "cpuset_cpus"
+        },
+        {
             "file": "/sys/kernel/debug/x86/retp_enabled",
             "pattern": [],
             "symbolic_name": "x86_retp_enabled"
