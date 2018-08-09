@@ -978,7 +978,6 @@
             "file": "/sys/devices/system/cpu/vulnerabilities/spec_store_bypass",
             "pattern": [],
             "symbolic_name": "cpu_vulns_spec_store_bypass"
-        
         },
         {
             "file": "/sys/fs/cgroup/cpuset/cpuset.cpus",
